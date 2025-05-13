@@ -9,7 +9,7 @@ export default function First() {
     const [list,setList] = useState([{}])
 
    useEffect(()=>{
-      axios.get('https://todoback-phi.vercel.app/api/getTask')
+      axios.get('https://todoback-seven.vercel.app/api/getTask')
       .then(res => setList(res.data.tas))
    },[])
    
@@ -18,7 +18,7 @@ export default function First() {
  // Delete function
  const handleDelete=(_id)=>{   
     // console.log(_id)
-  axios.delete('https://todoback-phi.vercel.app/api/deletetask/'+_id)
+  axios.delete('https://todoback-seven.vercel.app/api/deletetask/'+_id)
   .then((response)=>
   {
    if(response.status==200)
