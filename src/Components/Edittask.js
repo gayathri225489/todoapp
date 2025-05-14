@@ -45,7 +45,7 @@ export default function Edittask() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const api = 'https://todoback-seven.vercel.app/api/edit_task/'+edit_taskid
+    const api = 'https://todoback-three.vercel.app/api/edit_task/'+edit_taskid
         axios.put(api,data).then((response) => {
             console.log(response.data)
             if(response.status==200){
