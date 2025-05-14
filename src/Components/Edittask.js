@@ -28,7 +28,7 @@ export default function Edittask() {
 
 
 
-      let api = 'https://todoback-seven.vercel.app/api/get_task_data/'+edit_taskid
+      let api = 'https://todoback-three.vercel.app/api/get_task_data/'+edit_taskid
         useEffect(() => {
         axios.get(api).then((response) => {
             console.log(response.data.task_data)
